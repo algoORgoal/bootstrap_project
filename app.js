@@ -20,6 +20,11 @@ res.sendFile(path.join(__dirname + '/views/bootstrap01.html'));
 
 //static links for Junguk
 //Your code goes here...
+router.get('/colors-images', function (req, res) {
+res.sendFile(path.join(__dirname + '../views/bootstrap_junguk/colors-images.html'));
+//__dirname : It will resolve to your project folder.
+});
+    
 
 app.use('/', router);
 
