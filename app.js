@@ -13,8 +13,13 @@ res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 //static links for Byeolchan
-router.get('/byeolchan/boostrap01', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap01.html'));
+router.get('/bootstrap01_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap01.html'));
+//__dirname : It will resolve to your project folder.
+});
+
+router.get('/bootstrap02_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap02.html'));
 //__dirname : It will resolve to your project folder.
 });
 
