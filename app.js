@@ -18,6 +18,11 @@ res.sendFile(path.join(__dirname + '/views/bootstrap01.html'));
 //__dirname : It will resolve to your project folder.
 });
 
+router.get('/byeolchan/boostrap02', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap02.html'));
+//__dirname : It will resolve to your project folder.
+});
+
 //static links for Junguk
 //Your code goes here...
 
