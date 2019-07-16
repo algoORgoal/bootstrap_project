@@ -44,10 +44,16 @@ res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap06.html'
 });
 
 router.get('/bootstrap07_byeolchan', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap07.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap07.html'));
+//__dirname : It will resolve to your project folder.
+});
+
+router.get('/bootstrap08_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap08.html'));
     //__dirname : It will resolve to your project folder.
     });
     
+
 
 //static links for Junguk
 //Your code goes here...
@@ -55,6 +61,8 @@ router.get('/colors-images', function (req, res) {
 res.sendFile(path.join(__dirname + '../views/bootstrap_junguk/colors-images.html'));
 //__dirname : It will resolve to your project folder.
 });
+
+
     
 
 app.use('/', router);
