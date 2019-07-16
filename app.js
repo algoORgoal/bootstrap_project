@@ -49,10 +49,14 @@ res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap07.html'
 });
 
 router.get('/bootstrap08_byeolchan', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap08.html'));
-    //__dirname : It will resolve to your project folder.
-    });
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap08.html'));
+//__dirname : It will resolve to your project folder.
+});
     
+router.get('/bootstrap09_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap09.html'));
+//__dirname : It will resolve to your project folder.
+});
 
 
 //static links for Junguk
